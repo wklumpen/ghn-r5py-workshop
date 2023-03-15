@@ -1,0 +1,21 @@
+name: canue
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyterlab
+  - altair
+  - configargparse
+  - fiona
+  - geopandas
+  - importlib_resources
+  - joblib
+  - jpype1
+  - numpy
+  - pandas
+  - psutil
+  - requests
+  - pip
+  - geopandas
+  - pip:
+    - git+https://github.com/r5py/r5py.git@29da8da4fb1f07333772f9ac23236dfc8e0c4fbd
