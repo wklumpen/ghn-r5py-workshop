@@ -3,6 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - python=3.10
+  - openjdk=17.0.3
   - jupyterlab
   - altair
   - configargparse
@@ -16,6 +17,5 @@ dependencies:
   - psutil
   - requests
   - pip
-  - geopandas
   - pip:
     - git+https://github.com/r5py/r5py.git@29da8da4fb1f07333772f9ac23236dfc8e0c4fbd
