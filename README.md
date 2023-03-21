@@ -1,5 +1,7 @@
 # CANUE Spatial Analysis Workshop
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/wklumpen/canue-access-workshop/HEAD)
+
 This repository contains a series of workbooks and datasets that are useful for learning how to calculate your own transit access to opportunity measures and distributive equity measures using only open-source data and software.
 
 These notebooks use [r5py](https://r5py.readthedocs.io/en/stable/), a Python-based wrapper for Conveyal's [R5](https://github.com/conveyal/r5) routing engine, which is very fast and has features that make it especially good for calculating transit travel time matrices.
