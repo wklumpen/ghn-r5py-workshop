@@ -1,6 +1,6 @@
-# CANUE Spatial Analysis Workshop
+# GHN Spatial Analysis Workshop
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/wklumpen/canue-access-workshop/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/wklumpen/ghn-r5py-workshop/HEAD)
 
 This repository contains a series of workbooks and datasets that are useful for learning how to calculate your own transit access to opportunity measures and distributive equity measures using only open-source data and software.
 
