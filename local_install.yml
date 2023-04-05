@@ -1,0 +1,20 @@
+name: ghn
+
+channels:
+    - conda-forge
+
+dependencies:
+    - python=3.10
+    - folium
+    - fiona
+    - openjdk
+    - geopandas
+    - importlib_resources
+    - matplotlib
+    - mapclassify
+    - numpy
+    - pandas
+    - r5py
+    - shapely
+    - altair
+    - jupyterlab

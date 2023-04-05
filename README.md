@@ -15,7 +15,7 @@ This repository's analysis focuses on Calgary, Canada.
 It is possible to run this analysis using a cloud-hosted Jupyter notebook service called Binder (click the "open in binder" icon above to do so), however running travel time matrices requires a decent amount of computational resources and will almost certainly be more robust if run locally. Please follow the installation instructions below to get it set up on your computer.
 
 ## Installation
-There are may different ways to install both r5py and the other required tools on your computer. If you are familiar with environment management you can loosely follow this guide. If you are starting from the ground up, here are the recommended steps:
+There are may different ways to install both r5py and the other required tools on your computer. If you are familiar with environment management you can loosely follow this guide. If you are starting from scratch, here are the recommended steps:
 
 ### 1. Get the Code
 You can get the code either by cloning this repository using Git, or by downloading a Zipped file of the code by going to Code -> Download ZIP. Extract this zipped folder somewhere on your computer.

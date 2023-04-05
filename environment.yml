@@ -1,4 +1,4 @@
-name: canue
+name: ghn
 
 channels:
     - conda-forge
