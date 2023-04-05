@@ -29,11 +29,11 @@ If you're starting from another conda distribution, make sure you have `mamba` a
 
 Now you need to install the dependencies. To ensure you have the environment you need, you should install directly from the `environment.yml` file located in the main repository folder:
 
-    mamba install -f environment.yml
+    mamba create -n ghn -f environment.yml
 
 This will install a whole number of useful packages. You will need to confirm installation with `y` at some point. To check that your installation worked, you need to activate your environment:
 
-    conda activate canue
+    conda activate ghn
 
 And then check packages are working with
 
