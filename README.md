@@ -53,6 +53,9 @@ And then check packages are working with
 
 This might take a little while if it's the first time you're importing as r5py needs to download a file. If you see no errors, you can exit the Python interpreter with `exit()` and you're good to go. 
 
+#### Java Development Kit
+You may need to install a Java Development Kit on your system (JDK), version 11. You can find downloads for this on the [Oracle website](https://www.oracle.com/java/technologies/downloads/#java11-linux). Installing this on your system should enable Java to work properly and is the first step to check if you run into issues above when importing `r5py`.
+
 ### 4. Launch Jupyter Lab
 To work with the notebooks and to follow along in the workshop launch JupyterLab with the command:
 
