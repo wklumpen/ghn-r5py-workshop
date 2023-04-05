@@ -18,18 +18,29 @@ It is possible to run this analysis using a cloud-hosted Jupyter notebook servic
 There are may different ways to install both r5py and the other required tools on your computer. If you are familiar with environment management you can loosely follow this guide. If you are starting from scratch, here are the recommended steps:
 
 ### 1. Get the Code
-You can get the code either by cloning this repository using Git, or by downloading a Zipped file of the code by going to Code -> Download ZIP. Extract this zipped folder somewhere on your computer.
+You can get the code either by cloning this repository using Git, or by downloading a Zipped file of the code by going to Code -> Download ZIP on the main repository page. Extract this zipped folder somewhere on your computer.
 
 ### 2. Install Miniconda and Mamba
-Your best bet is to go start with [Mambaforge](https://github.com/conda-forge/miniforge#mambaforge) (available for Windows/Linux/Mac), which is a drop-in replacement for the popular package manager [Miniconda](https://docs.conda.io/en/latest/miniconda.html). By default, MambaForge uses only the conda-forge channel to fetch packages. This helps to avoid dependency conflicts and potential issues with licensing (see [this blog post](https://florianwilhelm.info/2021/09/Handling_Anaconda_without_getting_constricted/) if you're curious).
 
-If you're starting from another conda distribution, make sure you have `mamba` available on your system by installing it into the base environment (If you've used Mambaforge you can skip this step):
+#### 2a: Install from Mambaforge
+If you have not installed Python or Conda on your computer before, your best bet is to start with [Mambaforge](https://github.com/conda-forge/miniforge#mambaforge) (available for Windows/Linux/Mac).
+
+Depending on how things have been installed, you may have to [add Conda to your PATH variable](https://stackoverflow.com/questions/44597662/conda-command-is-not-recognized-on-windows-10), and then run the command:
+
+    conda init
+
+Which will add `(base)` to the start of your terminal line.
+
+#### 2b: Starting with an existing Conda distribution
+If you're starting from another conda distribution, make sure you have `mamba` available on your system by installing it into the base environment (If you've used Mambaforge above you can skip this step):
 
     conda install -n base -c conda-forge mamba
 
-Now you need to install the dependencies. To ensure you have the environment you need, you should install directly from the `environment.yml` file located in the main repository folder:
 
-    mamba create -n ghn -f environment.yml
+### 3. Install Dependencies
+Next you need to install the dependencies. To do this you will need to open a command prompt or terminal and navigate to the repository folder. To ensure you have the environment you need, you should install directly from the `local_install.yml` file located in the main repository folder:
+
+    mamba create -n ghn -f local_install.yml
 
 This will install a whole number of useful packages. You will need to confirm installation with `y` at some point. To check that your installation worked, you need to activate your environment:
 
@@ -40,7 +51,10 @@ And then check packages are working with
     python
     >>> import r5py
 
-If you see no errors, you can exit the Python interpreter with `exit()` and you're good to go. To work with the notebooks launch JupyterLab:
+This might take a little while if it's the first time you're importing as r5py needs to download a file. If you see no errors, you can exit the Python interpreter with `exit()` and you're good to go. 
+
+### 4. Launch Jupyter Lab
+To work with the notebooks and to follow along in the workshop launch JupyterLab with the command:
 
     python -m jupyter-lab
 
@@ -51,4 +65,4 @@ Much of the code and analysis in this repository comes directly from or is inspi
 - The [Equity of Transport Futures](https://github.com/wklumpen/equity-transport-futures) code and guidebook
 
 ## Citing
-If you use r5py in your work, please consider [citing it properly](https://github.com/r5py/r5py#citation)
+If you end up using r5py in your work, please consider [citing it properly](https://github.com/r5py/r5py#citation)
